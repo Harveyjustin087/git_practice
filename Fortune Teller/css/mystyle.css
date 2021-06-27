@@ -1,0 +1,56 @@
+body{
+    max-width: 940px;
+    margin: auto;
+    font: "Times New Roman";
+    color: whitesmoke;
+    text-align: center;
+    background-color: blue;
+    background-image: url("../img/nightSky.jpg");
+}
+#bg {
+    background-image: url("../img/nightSky.jpg");
+    background-position-x: 150%;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-name: moveAndGrove;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    overflow: hidden;
+    margin: 0 auto;
+    will-change: background-position-x;
+  }
+  
+  @keyframes moveAndGrove {
+    0% {
+      background-position-x: 0%;
+    }
+    50% {
+      background-position-x: 100%;
+    }
+    100% {
+      background-position-x: 0%;
+    }
+  }
+.question{
+    width: 80%;
+}
+.reveal{
+    width: 80%;
+    height: 140px;
+}
+#getFortune{
+    width: 200px;
+    height: 100px;
+    color: rgb(255, 252, 251);
+    background-color: tomato;
+}
+#fortuneRevealed{
+    font-size: 50px;
+    color: rgb(250, 242, 241);
+}
+#revealSign{
+    font-size: 50px;
+    color: rgb(250, 249, 249);
+}
+

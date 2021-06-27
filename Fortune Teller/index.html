@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/mystyle.css">
+        <script type="text/javascript" src="js/script.js"></script>
+        <title>Fortune Teller</title>
+    </head>
+    <body>
+        <div id="bg">
+        <h1>The Fortune Teller</h1>
+        <h2>Hello traveler welcome come in and ask a question and I the great fortune teller will reveal the truth!</h2><br>
+        <img src="img/teller.jpg" width="30%" height="30%" alt="teller"/><br>
+        <h3>First let me know your sign:</h3>
+        <select name="astroSign" id="astroSign" onchange="revealHorro(revealSign,this)">
+            <option value="leo">Leo</option>
+            <option value="cancer">Cancer</option>
+            <option value="pisces">Pisces</option>
+            <option value="aries">Aries</option>
+            <option value="gemini">Gemini</option>
+            <option value="virgo">Virgo</option>
+            <option value="scorpius">Scorpius</option>
+            <option value="aquarius">Aquarius</option>
+            <option value="libra">Libra</option>
+            <option value="Taurus">Taurus</option>
+            <option value="sagittarius">Sagittarius</option>
+            <option value="capricorn">Capricorn</option>
+        </select>
+        <div id="revealSign"><p></p></div>
+        <h3>Ask your question below and click the button and I will reveal if those events will come to pass!</h3><br>
+        <input type="text" class="question"><br><br>
+        <button type="button" id="getFortune" onclick="giveFortune(fortuneRevealed)">Find Your Fortune!</button><br>
+        <h1>Your Fortune:</h1>
+        <div id="fortuneRevealed"><p></p></div>
+        </div>
+    </body>
+    </html>
